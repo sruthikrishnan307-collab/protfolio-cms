@@ -9,9 +9,9 @@ SECRET_KEY = 'django-insecure-change-this-later'
 
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["*"]
 
 
 # Application definition
@@ -102,7 +102,7 @@ USE_TZ = True
 STATIC_URL = 'static/'
 
 STATICFILES_DIRS = [
-    BASE_DIR / 'backend' / 'core' / 'static',
+    BASE_DIR / 'core' / 'static',
 ]
 
 
