@@ -7,23 +7,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Sruthika  K | Portfolio</title>
+    <title>Sruthika K | Portfolio</title>
 
     <link rel="stylesheet" href="{% static 'style.css' %}">
 </head>
 
 <body>
 
-    <!-- Navigation -->
+    <!-- ================= NAVIGATION ================= -->
+
     <nav>
         <div class="container">
 
-            <h2><span>Sruthika K</span></h2>
+            <h2>
+                <span>Sruthika K</span>
+            </h2>
 
             <div>
                 <a href="#about">About</a>
                 <a href="#skills">Skills</a>
                 <a href="#projects">Projects</a>
+                <a href="#learning">Currently Learning</a>
                 <a href="#education">Education</a>
                 <a href="#certifications">Certifications</a>
                 <a href="#contact">Contact</a>
@@ -33,18 +37,23 @@
     </nav>
 
 
-    <!-- Hero Section -->
+    <!-- ================= HERO SECTION ================= -->
+
     <div class="hero">
 
         <div class="container">
 
             <img src="{% static 'profile.jpg' %}"
-                 alt="SruthikaK Profile Photo"
+                 alt="Sruthika K Profile Photo"
                  class="profile-photo">
 
-            <h1>Hi, I'm<span>Sruthika K</span> </h1>
+            <h1>
+                Hi, I'm <span>Sruthika K</span>
+            </h1>
 
-            <h2>B.Tech Computer Science Engineering.</h2>
+            <h2>
+                B.Tech Computer Science Engineering
+            </h2>
 
             <p>
                 Computer Science Engineering student interested in
@@ -55,6 +64,11 @@
 
                 <a href="#projects" class="button">
                     View My Projects
+                </a>
+                <a href="{% static 'resume.pdf' %}"
+                        target="_blank"
+                         class="button secondary">
+                         View Resume
                 </a>
 
                 <a href="#contact" class="button secondary">
@@ -68,7 +82,8 @@
     </div>
 
 
-    <!-- About -->
+    <!-- ================= ABOUT SECTION ================= -->
+
     <section id="about">
 
         <div class="container">
@@ -97,7 +112,8 @@
     </section>
 
 
-    <!-- Skills -->
+    <!-- ================= SKILLS SECTION ================= -->
+
     <section id="skills">
 
         <div class="container">
@@ -119,8 +135,71 @@
 
     </section>
 
+<!-- ================= CURRENTLY LEARNING ================= -->
 
-    <!-- Projects -->
+    <section id="learning">
+
+        <div class="container">
+
+            <h2>Currently Learning</h2>
+
+        <div class="card-container">
+
+                <div class="card">
+
+                    <h3>Django</h3>
+
+                <p>
+                    Learning Django for building dynamic web applications
+                    and portfolio-based projects using Python.
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <h3>Data Structures & Algorithms</h3>
+
+                <p>
+                    Practicing problem solving and strengthening
+                    algorithmic thinking using Python and Java.
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <h3>SQL & Database Management</h3>
+
+                <p>
+                    Developing practical knowledge of SQL, databases,
+                    queries and database-driven applications.
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <h3>Web Development</h3>
+
+                <p>
+                    Improving skills in HTML, CSS, JavaScript and
+                    backend development with Python and Django.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+    <!-- ================= PROJECTS SECTION ================= -->
+
     <section id="projects">
 
         <div class="container">
@@ -129,28 +208,45 @@
 
             <div class="card-container">
 
+
+                <!-- MOVIE BOOKING WEBSITE -->
+
                 <div class="card">
 
-                    <h3>AI Travel Planner</h3>
+                    <h3>
+                        Movie Booking Website
+                    </h3>
 
                     <p>
-                        An AI-based travel planning application designed
-                        to generate personalized travel plans.
+                        A movie booking website that allows users to
+                        browse available movies and book movie tickets
+                        online.
                     </p>
 
                     <br>
 
                     <p>
                         <strong>Technologies:</strong>
-                        Python, LangChain
+                        PHP, HTML, CSS, Python
                     </p>
+                    <div class="project-buttons">
+
+                    <a href="https://github.com/sruthikrishnan307-collab/DBMS-Project"
+                       target="_blank"
+                       class="button">
+                        View on GitHub
+                    </a>
 
                 </div>
 
 
+                <!-- TEXT TO SPEECH -->
+
                 <div class="card">
 
-                    <h3>Text-to-Speech Application</h3>
+                    <h3>
+                        Text-to-Speech Application
+                    </h3>
 
                     <p>
                         A web application that converts written text
@@ -163,8 +259,21 @@
                         <strong>Technologies:</strong>
                         React, Flask, Python, gTTS
                     </p>
+                    <div class="project-buttons">
+
+                    <a href="https://github.com/sruthikrishnan307-collab/text-to-speech"
+                       target="_blank"
+                       class="button">
+                        View on GitHub
+                    </a>
+                     <a href="https://text-to-speech-two-beige.vercel.app/"
+                        target="_blank"
+                        class="button secondary">
+                    Live Demo
+                    </a>
 
                 </div>
+
 
             </div>
 
@@ -173,7 +282,8 @@
     </section>
 
 
-    <!-- Education -->
+    <!-- ================= EDUCATION SECTION ================= -->
+
     <section id="education">
 
         <div class="container">
@@ -184,7 +294,9 @@
 
                 <div class="card">
 
-                    <h3>B.Tech / B.E. Computer Science Engineering</h3>
+                    <h3>
+                        B.Tech / B.E. Computer Science Engineering
+                    </h3>
 
                     <br>
 
@@ -209,7 +321,8 @@
     </section>
 
 
-    <!-- Certifications -->
+    <!-- ================= CERTIFICATIONS SECTION ================= -->
+
     <section id="certifications">
 
         <div class="container">
@@ -218,22 +331,36 @@
 
             <div class="card-container">
 
+
+                <!-- ORACLE AI FOUNDATION -->
+
                 <div class="card">
 
-                    <h3>Oracle Cloud Infrastructure AI Foundation</h3>
+                    <h3>
+                        Oracle Cloud Infrastructure AI Foundation
+                    </h3>
 
-                    <p>Oracle</p>
+                    <p>
+                        Oracle
+                    </p>
 
                 </div>
 
 
+                <!-- ORACLE AI AGENT -->
+
                 <div class="card">
 
-                    <h3>Oracle AI Agent Foundation</h3>
+                    <h3>
+                        Oracle AI Agent Foundation
+                    </h3>
 
-                    <p>Oracle</p>
+                    <p>
+                        Oracle
+                    </p>
 
                 </div>
+
 
             </div>
 
@@ -242,7 +369,8 @@
     </section>
 
 
-    <!-- Contact -->
+    <!-- ================= CONTACT SECTION ================= -->
+
     <section id="contact">
 
         <div class="container">
@@ -260,6 +388,18 @@
                     Email Me
                 </a>
 
+                <a href="https://github.com/sruthikrishnan307-collab"
+                   target="_blank"
+                   class="button secondary">
+                    GitHub
+                </a>
+
+                <a href="www.linkedin.com/in/sruthika-k-33b108346"
+                   target="_blank"
+                   class="button secondary">
+                    LinkedIn
+                </a>
+
             </div>
 
         </div>
@@ -267,11 +407,12 @@
     </section>
 
 
-    <!-- Footer -->
+    <!-- ================= FOOTER ================= -->
+
     <footer>
 
         <p>
-            © 2026 SruthikaK. All rights reserved.
+            © 2026 Sruthika K. All rights reserved.
         </p>
 
     </footer>
